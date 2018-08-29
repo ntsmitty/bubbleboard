@@ -26,18 +26,19 @@ export const inputChange = (string) =>{
   }
 }
 
-<<<<<<< HEAD
 export const storeUserData = (userObjs) => {
   return {
     type: types.STORE_USER_DATA,
     payload: userObjs, 
-=======
-export const rootChange = (string) =>{
-  return{
-    type: types.ROOT_CHANGE,
-    payload: string,
+  
   }
-}
+
+// export const rootChange = (string) =>{
+//   return{
+//     type: types.ROOT_CHANGE,
+//     payload: string,
+//   }
+// }
 
 export const addBoard  = (num) => {
   return{
@@ -51,7 +52,6 @@ export const loadUserBubbleBoards = (object) =>  {
   return{
     type: types.LOAD_USER_BUBBLEBOARDS,
     payload: object, 
->>>>>>> ef71332e89d8a0281bba53e7defdcb1d1bf7ef13
   }
 }
 
