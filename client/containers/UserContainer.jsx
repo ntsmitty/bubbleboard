@@ -7,9 +7,9 @@ import UserBubbleBoard from '../components/UserBubbleBoard.jsx';
 //URL for UserData
 const URL = 'http://localhost:3000/data';
 
-// const mapStateToProps = store => ({
-  
-// }); 
+const mapStateToProps = store => ({
+  userData: store.dashboard.userData, 
+}); 
     
 const mapDispatchToProps = (dispatch) => ({
   storeUserData: (userInformation) => dispatch(actions.storeUserData(userInformation))
@@ -29,13 +29,14 @@ class UserContainer extends Component {
       .then(response => response.json())
       .then(data => {
           this.props.storeUserData(data)  
+        
       })
       .catch(error => console.log(error)) 
   }
-  render() {
+ render() {
     return(
       <div>
-        <UserBubbleBoard userInformation={ this.props.state.userData } />
+        <UserBubbleBoard userInformation={ this.props.userData } />
       </div> 
     )
   }

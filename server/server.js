@@ -27,10 +27,8 @@ app.use(express.static(__dirname + './../'));
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use('/auth', authRoutes);
-
 app.use('/profile', profileRoutes);
-
+app.use('/auth', authRoutes);
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../index.html'))

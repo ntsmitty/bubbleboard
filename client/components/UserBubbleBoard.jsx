@@ -7,21 +7,20 @@ import { ListGroupItem } from 'react-bootstrap'
 
 
 const UserBubbleBoard = (props) => {
-  render()
     return(
       <div className='user-bubble-modal'>
-       <Mode.Dialog>
+       <Modal.Dialog>
          <Modal.Header>
            <Modal.Title>User Bubble Boards</Modal.Title>
          </Modal.Header>
-         <Modal.Body>wan
+         <Modal.Body>
            <ListGroup>
            {props.userInformation.map(()  =>  { 
              <BubbleBoardItem userInformation={ props.userInformation } />
            })}; 
            </ListGroup>
          </Modal.Body>
-        </Mode.Dialog>
+        </Modal.Dialog>
       </div>
     )
  }
