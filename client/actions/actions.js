@@ -30,7 +30,12 @@ export const storeUserData = (userObjs) => {
   return {
     type: types.STORE_USER_DATA,
     payload: userObjs, 
-  
+  }}
+
+export const rootChange = (string) =>{
+  return{
+    type: types.ROOT_CHANGE,
+    payload: string,
   }
 
 // export const rootChange = (string) =>{
