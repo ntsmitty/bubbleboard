@@ -1,5 +1,7 @@
 import React from 'react';
 import UserBubbleBoard from '../coomponents/UserBubbleBoard.jsx'; 
+import { ListGroup } from 'react-bootstrap';
+import { ListItem } from 'react-bootstrap';
 
 
 
@@ -7,12 +9,11 @@ import UserBubbleBoard from '../coomponents/UserBubbleBoard.jsx';
 const BubbleBoardItem = (props) => {
   render() {
     return(
-      <div> 
-        <button className='isTaskComplete'></button>
-         <div className='userInformation'>
-          {props.userInformation}
-        </div>
-      </div>
+      <listGroupItem userInformation={props.userInformation}> UserBubbleBoards </listGroupItem>
     ) 
   };
 };
+
+
+
+

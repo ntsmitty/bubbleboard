@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import UserBubbleBoard from '../components/UserBubbleBoard.jsx';
+
+
+
 //URL for UserData
 const URL = 'http://localhost:3000/data';
 
-const mapStateToProps = store => ({
+// const mapStateToProps = store => ({
   
-}); 
+// }); 
     
 const mapDispatchToProps = (dispatch) => ({
   storeUserData: (userInformation) => dispatch(actions.storeUserData(userInformation))
@@ -18,7 +21,6 @@ class UserContainer extends Component {
 
         this.state = {
             userData: [],
-
         }
     }
 //fetches user data from database. 
@@ -30,7 +32,6 @@ class UserContainer extends Component {
       })
       .catch(error => console.log(error)) 
   }
-
   render() {
     return(
       <div>
@@ -39,9 +40,5 @@ class UserContainer extends Component {
     )
   }
 }
-
-
-
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(UserContainer); 

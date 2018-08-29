@@ -14,11 +14,7 @@ import RJSON from "relaxed-json";
 
 const initialState = {
   inputJSON: {},
-<<<<<<< HEAD
-  inputString: " ",
-=======
   inputString: "",
->>>>>>> ef869eb43c671b582ccf22e48ea97e2a9938c2ba
   renderBoard: false,
   rootName: '',
   numberOfBoards: 1,
