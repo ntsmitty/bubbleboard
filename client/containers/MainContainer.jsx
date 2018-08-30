@@ -12,7 +12,8 @@ const MainContainer = props => (
     </div>
     <div className="flexRow" style={{width: '100'}}>
       <UserContainer /> 
-     
+      {/* <Sidebar />
+      <BoardContainer /> */}
     </div>
   </div>
 );

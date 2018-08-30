@@ -4,6 +4,7 @@ import UserContainer from '../containers/UserContainer.jsx'
 import { Modal } from 'react-bootstrap'
 import  { ListGroup } from 'react-bootstrap'; 
 import { ListGroupItem } from 'react-bootstrap'
+import BubbleBoardItem from '../components/UserBubbleBoardItems.jsx'
 
 
 const UserBubbleBoard = (props) => {
@@ -15,6 +16,7 @@ const UserBubbleBoard = (props) => {
          </Modal.Header>
          <Modal.Body>
            <ListGroup>
+  
            {props.userInformation.map(()  =>  { 
              <BubbleBoardItem userInformation={ props.userInformation } />
            })}; 
@@ -25,4 +27,6 @@ const UserBubbleBoard = (props) => {
     )
  }
 
-export default UserBubbleBoard; 
+ export default UserBubbleBoard; 
+
+

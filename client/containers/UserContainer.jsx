@@ -29,7 +29,6 @@ class UserContainer extends Component {
       .then(response => response.json())
       .then(data => {
           this.props.storeUserData(data)  
-        
       })
       .catch(error => console.log(error)) 
   }

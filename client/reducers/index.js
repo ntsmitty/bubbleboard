@@ -22,6 +22,5 @@ const reducers = combineReducers({
   bubble: bubbleReducer,
   dashboard: UserdashboardReducer
 });
-
 // make the combined reducers available for import
 export default reducers;
